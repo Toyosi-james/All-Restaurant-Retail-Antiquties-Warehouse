@@ -468,7 +468,7 @@ text-decoration: underline;
 
         grid-template-columns: repeat(2, 0.5fr);
         gap: 1rem;
-        max-width: 90%;
+      max-width:  90%;
         background-color: #efecec;
         
     
@@ -484,22 +484,23 @@ text-decoration: underline;
         
     }
     .card-6 {
-        height: 300px;
+        height: 310px;
         width: 170px;
     }
     .card-14 {
         height: 300px;
         width: 170px;
+        font-size: 8px;
     }
     .card-text{
-        font-size: 13px;
+        font-size: 12px;
         width: 140px;
         padding: 5px;
         height: 120px;
         margin-top: 10px;
     }
     .card-text h4{
-        font-size: 14px;
+        font-size: 13px;
     }
  footer{
         padding: 20px;
