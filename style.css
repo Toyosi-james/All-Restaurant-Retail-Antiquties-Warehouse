@@ -151,6 +151,7 @@ background-color: #efecec;
 .filter-3{
     display: none;
 
+
 }
 
 .cards{
@@ -363,7 +364,7 @@ text-decoration: underline;
     }
     .filter-3{
         display: block;
-        flex-grow: 5;
+        
     
     }
     .cards{
@@ -397,17 +398,17 @@ text-decoration: underline;
     flex-direction: column;
     font-size: 15px;
 }}
-@media screen and (max-width:650px){
+@media screen and (max-width:500px){
     .header-icons{
         display: none;
         
     }
     header{
         justify-content: center;
-        padding:10px 30px;
+        padding: 20px;
     }
     .header-num h3{
-        font-size: 13px;
+        display: none;
     }
     .hero1{
         padding:13px 35px;
@@ -429,7 +430,7 @@ text-decoration: underline;
     }
     .filter{
         padding:0 30px ;
-        font-size: 15px;
+        font-size: 10px;
     }
     .filter-1 p span{
              opacity: 1;
@@ -443,14 +444,20 @@ text-decoration: underline;
         
         
         
+        
     }
     .cards{
         padding: 20px 30px;
+        grid-template-columns: repeat(2, 0.5fr);
         
     
     }
     .card-1{
         height: 370px;
+        
+    }
+    .card-6{
+        
     }
     .card-text{
         font-size: 13px;
