@@ -447,8 +447,10 @@ text-decoration: underline;
         
     }
     .cards{
-        padding: 20px 30px;
+
         grid-template-columns: repeat(2, 0.5fr);
+        gap:1rem;
+        justify-content: center;
         
     
     }

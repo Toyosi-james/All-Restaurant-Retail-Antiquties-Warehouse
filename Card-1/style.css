@@ -337,6 +337,8 @@ text-decoration: underline;
     }
     .checker{
         margin-bottom: 0;
+        font-size: 10px;
+        text-align: center;
     }
     footer{
         padding: 20px;
