@@ -217,7 +217,7 @@ textarea{
 }
 footer{
     background-color: #252525;
-    height: 90vh;
+    height: 100vh;
     color: #ccc;
     padding:50px 80px;
     
@@ -256,6 +256,37 @@ text-decoration: underline;
     display: flex;
     gap:30px;
     font-size: 20px;
+}
+.face{
+ color: white;
+ background-color: white;
+ border-radius: 50px;
+ width: 17px;
+ height: 19px;
+ color: black;
+ padding: 5px;
+ align-items: center;
+ font-size: 12px;
+ 
+}
+.ins{
+    
+    font-size: 17px;
+}
+.you{
+    font-size: 17px;
+}
+.pin{
+    color: white;
+ background-color: white;
+ border-radius: 50px;
+ width: 17px;
+ height: 19px;
+ color: black;
+ padding:3px 5px;
+ align-items: center;
+ font-size: 12px;
+ 
 }
 @media screen and (max-width:1033px) {
     .header-icons{
