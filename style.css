@@ -441,6 +441,7 @@ text-decoration: underline;
     }
     .filter-3{
         display: block;
+        margin-right: 30px;
         
         
         
@@ -449,20 +450,30 @@ text-decoration: underline;
     .cards{
 
         grid-template-columns: repeat(2, 0.5fr);
-        gap:1rem;
-        justify-content: center;
+        gap: 1rem;
         
     
     }
+    .cards img{
+       width:  170px;
+       display: block;
+    }
+    
     .card-1{
-        height: 370px;
+        height: 300px;
+        width: 170px;
         
     }
-    .card-6{
-        
+    .card-6 {
+        height: 300px;
+        width: 170px;
     }
     .card-text{
         font-size: 13px;
+        width: 140px;
+        padding: 5px;
+        height: 120px;
+        margin-top: 10px;
     }
     .card-text h4{
         font-size: 14px;
