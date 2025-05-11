@@ -54,8 +54,8 @@ header{
     height: 20px;
     display: flex;
     align-items: center;
-    gap: 250px;
-    padding: 10px 80px;
+    gap: 400px;
+    padding:15px 20px ;
     cursor: pointer;   
 }
 header h3 span:hover{
@@ -63,8 +63,7 @@ header h3 span:hover{
 }
 .header-num  {
     color: white;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     
 }
 .header-num h3{
@@ -75,14 +74,115 @@ header h3 span:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 20px 80px ;
     background-color: #efecec;
     cursor: pointer;
 }
-.search img{
-    width: 20px;
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Burger Icon */
+.burger {
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 20;
+}
+
+.burger span {
+  height: 4px;
+  background-color: #efecec;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Dropdown menu */
+.popup {
+  position: absolute;
+  top: 30px;
+  left: -12px;
+  background: #efecec;
+  width: 1000%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 999;
+  max-height: 400px;
+  overflow-y: auto;
+  -ms-overflow-style:none;
+  padding: 0;
+  
+}
+/* .popup::-webkit-scrollbar{
+display: none;
+} */
+.cont{
+    max-height: 300px;
+background-color: #efecec;
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    
+}
+.cont li a{
+    font-size: 30px;
+}
+
+    
+
+
+
+.popup.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  
+
+}
+
+.popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup li {
+  border-bottom: 1px solid #eee;
+}
+
+.popup li:last-child {
+  border-bottom: none;
+}
+
+.popup a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+}
+
+.popup a:hover{
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 .user img{
+    width: 20px;
+}
+.search img{
     width: 20px;
 }
 
@@ -330,7 +430,15 @@ text-decoration: underline;
     .restaurant-text p{
         width: 100%;
     }
-
+    .header-num{
+        display: none;
+    }
+    .menu-container{
+        flex-grow: 1;
+    }
+    .popup{
+        width: 102%;
+    }
 }
 @media screen and (max-width:900px){
     .header-icons{

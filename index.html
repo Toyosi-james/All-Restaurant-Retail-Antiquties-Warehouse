@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-   <main class="header-icons">
+   <!-- <main class="header-icons">
      <div class="face">
           <i class="fab fa-facebook-f"></i></div>
           <div class="ins"><i class="fab fa-instagram"></i></div>
@@ -22,15 +22,69 @@
     
         <div class="pin"> <i class="fab fa-pinterest-p"></i>
       </div>
-   </main>
-   <main class="header-num">
+   </main> -->
+   
+    
+    
+          <div class="menu-container">
+  <!-- Burger Icon -->
+  <div id="menu-button" class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Popup Menu -->
+  <div id="popup-menu" class="popup">
+      <ul>
+    <div class="cont">
+        <li><a href="https://antiquitieswarehouse.com/search">Search</a></li></div>
+        <li><a href="https://antiquitieswarehouse.com/collections/new-arrivals">New Arrivals</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-architectural">Architectural</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-art-decor">Art</a></li>
+      
+        <li><a href="https://antiquitieswarehouse.com/collections/beds">Beds</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/cabinets">Cabinets</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-containers">Container</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/antique-copper">Copper</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/corbels">Corbels</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/aviation">Decor & Objects</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-antique-doors">Doors</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-garden">Garden</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/gates">Gates</a></li>
+        <li><a href="#">Gates
+        </a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/industrial-salvage">Industrial Salvage</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-kitchen">Kitchen</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/ladders">Ladders</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-lighting">Ligthning</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/lithography-stones">Lithography Stone</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/lockers">Lockers</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/mirrors">Mirrors</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/recreation">Recreation</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-repurposed">Repurposed Pieces</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-restaurant-retail">Restaurant & Retail</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-seating">Seating</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/signs">Signs</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/shutters">Shutters</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-tables">Tables</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-windows">Windows</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/willy-guhl-collection">Willy Guhl</a></li>
+        <li><a href="https://antiquitieswarehouse.com/collections/all-clearance">CLEARANCE</a></li>
+    
+      </ul>
+    </div>
+  </div>
+  <main class="header-num">
    <div class="header-text">
     <h3>&lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;   <span>+1 (501) 250-1459 &nbsp; &nbsp; &#10132; &nbsp;&nbsp; +1 (716) 288-1472   </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&gt;</h3>
    </div></main>
-    </header>
-    <section class="hero">
-        <main class="hero1">
-        <main class="search">
+    
+</header>
+  <section class="hero">
+    <main class="hero1">
+
+<main class="search">
             <img src="./assets/search-interface-symbol.png" alt="">
         </main>
         <main class="logo">
@@ -39,7 +93,7 @@
         <main class="user">
             <img src="./assets/user.png" alt="">
         </main></main>
-        <main class="hero2">
+        <!-- <main class="hero2">
             <p><span>SEARCH</span></p>
                <p><span>  New Arrivals</span></p>
             <p><span>Architectural</span>  &nbsp; &#10003;</p>
@@ -71,7 +125,7 @@
             <p><span>Willy Guhl &nbsp;&#10003; </span></p> 
             <p><span>CLEARANCE &nbsp; &#10003;</span></p>
         </main>
-    </section>
+    </section> -->
     <section class="restaurant">
         <main class="restaurant-text">
             <h1>All Restaurant & Retail</h1>
@@ -86,7 +140,7 @@
         </main>
 <main class="filter-2">
     <div class="sort">
-        <p>Sort by:</p>
+        <p>S        ort by:</p>
     </div>
     <div class="Date">
         <p>Date, new to old &nbsp; &#10003; &nbsp;</p>
@@ -380,8 +434,22 @@
               </div>
             </main>
        -->
+    <script>
+     const menuButton = document.getElementById("menu-button");
+const popupMenu = document.getElementById("popup-menu");
 
-  
-    
+// Toggle menu when button is clicked
+menuButton.addEventListener("click", (e) => {
+  e.stopPropagation(); // Prevents click from bubbling
+  popupMenu.classList.toggle("active");
+});
+
+// Close menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (!popupMenu.contains(e.target) && !menuButton.contains(e.target)) {
+    popupMenu.classList.remove("active");
+  }
+}); 
+    </script>        
 </body>
 </html>
