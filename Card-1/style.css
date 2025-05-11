@@ -269,6 +269,10 @@ text-decoration: underline;
  font-size: 12px;
  
 }
+a[href^="tel"]{
+    color: inherit;
+    text-decoration: none;
+}
 .ins{
     
     font-size: 17px;
@@ -311,6 +315,9 @@ text-decoration: underline;
     .header-num {
         text-align: center;
         width: 100%;
+    }
+    .header-num h3{
+        font-weight: 600;
     }
     .hero1{
         

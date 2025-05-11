@@ -433,8 +433,8 @@ text-decoration: underline;
         
     
     }
-    .header-num{
-
+    .header-num h3{
+font-weight: 600;
     }
     .restaurant-text p{
         width: 100%;
@@ -446,7 +446,7 @@ text-decoration: underline;
         flex-grow: 1;
     }
     .popup{
-        width: 102%;
+        width: 890%;
     }
 }
 @media screen and (max-width:900px){
