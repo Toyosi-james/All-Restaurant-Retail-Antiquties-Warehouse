@@ -269,7 +269,7 @@ text-decoration: underline;
  font-size: 12px;
  
 }
-a[href^="tel"]{
+.header-num a[href^="tel"]{
     color: inherit;
     text-decoration: none;
 }
