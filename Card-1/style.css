@@ -53,10 +53,10 @@ header{
     display: flex;
     background-color:  #252525;
     height: 20px;
-    display: flex;
-    align-items: center;
-    gap: 250px;
-    padding: 10px 80px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* gap: 250px; */
+    padding: 30px 80px;
     cursor: pointer;   
 }
 header h3 span:hover{
@@ -64,8 +64,8 @@ header h3 span:hover{
 }
 .header-num  {
     color: white;
-    display: flex;
-    justify-content: center;
+    width: 80%;
+    text-align: center;
     
 }
 .header-num h3{
@@ -304,7 +304,13 @@ text-decoration: underline;
         
     }
     header{
-        justify-content: center;
+        
+    padding: 30px;
+    ;
+    }
+    .header-num {
+        text-align: center;
+        width: 100%;
     }
     .hero1{
         
@@ -347,11 +353,11 @@ text-decoration: underline;
         
     }
     header{
-        justify-content: center;
-        padding: 20px;
+        
+        
     }
     .header-num h3{
-        display: none;
+
     }
     .hero1{
         padding:13px 35px;

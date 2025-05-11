@@ -52,9 +52,9 @@ header{
     display: flex;
     background-color:  #252525;
     height: 20px;
-    display: flex;
-    align-items: center;
-    gap: 400px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* gap: 400px; */
     padding:15px 20px ;
     cursor: pointer;   
 }
@@ -64,7 +64,12 @@ header h3 span:hover{
 .header-num  {
     color: white;
     text-align: center;
+    width: 100%;
     
+}
+a[href^="tel"]{
+    color: inherit;
+    text-decoration: none;
 }
 .header-num h3{
     font-weight: 300;
@@ -425,13 +430,17 @@ text-decoration: underline;
         display: none;
     }
     header{
-        justify-content: center;
+        
+    
+    }
+    .header-num{
+
     }
     .restaurant-text p{
         width: 100%;
     }
     .header-num{
-        display: none;
+        display: block;
     }
     .menu-container{
         flex-grow: 1;
@@ -448,6 +457,7 @@ text-decoration: underline;
     header{
         justify-content: center;
     }
+
     .hero1{
         
         padding: 10px 40px;
@@ -532,8 +542,13 @@ text-decoration: underline;
         justify-content: center;
         padding: 20px;
     }
+    .header-num {
+        
+        
+    }
     .header-num h3{
-        display: none;
+     font-size: 13px;
+     text-align: center;
     }
     .hero1{
         padding:13px 35px;
